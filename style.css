@@ -67,3 +67,58 @@ footer{background:#080808;padding:30px 20px;text-align:center;border-top:1px sol
 
 /* Responsive */
 @media (max-width:900px){.hero h1{font-size:28px}.hero p{font-size:15px}.header-inner{padding:12px}.brand .logo{font-size:18px}}
+/* --- Mobile Responsive Fix --- */
+@media (max-width: 768px) {
+  header .header-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .hero-inner {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .hero-inner h1 {
+    font-size: 1.4rem;
+  }
+
+  .hero-inner p {
+    font-size: 1rem;
+  }
+
+  .cta button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .founder img {
+    width: 80%;
+    max-width: 250px;
+    border-radius: 12px;
+  }
+
+  footer {
+    padding: 10px;
+    text-align: center;
+  }
+}
