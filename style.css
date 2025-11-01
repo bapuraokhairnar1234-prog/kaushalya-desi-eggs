@@ -1,135 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kaushalya Desi Eggs</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background-color: #fff8e1;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #ffcc00;
-      color: #222;
-      padding: 20px;
-      font-size: 24px;
-      font-weight: bold;
-    }
-    section {
-      padding: 30px;
-    }
-    button {
-      background-color: #ffcc00;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 16px;
-    }
-    button:hover {
-      background-color: #ffdb4d;
-    }
-  </style>
-</head>
-<body>
-  <header>Kaushalya Desi Eggs</header>
-  <section>
-    <h2>Fresh Organic Eggs from Our Farm</h2>
-    <p>100% Gavran and Healthy Desi Eggs — directly from the farm to your home.</p>
-    <button onclick="window.location.href='https://wa.me/918767405835?text=Hello!%20I%20want%20to%20order%20Desi%20Eggs'">
-      Order on WhatsApp
-    </button>
-  </section>
-</body>
-</html>sty
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gallery | Kaushalya Desi Eggs</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      background-color: #000;
-      color: #ffd700;
-      font-family: 'Poppins', sans-serif;
-      text-align: center;
-      overflow-x: hidden;
-    }
+/* style.css — Kaushalya Desi Eggs (Gold + Black, Beast Theme) */
+/* Base */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+*{box-sizing:border-box}html,body{margin:0;padding:0;height:100%}
+body{font-family:'Poppins',sans-serif;background:#000;color:#fff;line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
 
-    header {
-      padding: 20px;
-      font-size: 32px;
-      font-weight: bold;
-      animation: fadeInDown 1.5s ease;
-    }
+/* Header / Nav */
+header{position:fixed;top:0;left:0;right:0;z-index:40;background:linear-gradient(90deg,rgba(0,0,0,0.75),rgba(10,10,10,0.85));backdrop-filter:blur(4px);border-bottom:1px solid rgba(255,215,0,0.06)}
+.header-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px 20px}
+.brand{display:flex;align-items:center;gap:14px}
+.brand .logo{font-weight:700;color:#ffd700;font-size:20px;text-shadow:0 0 8px rgba(255,215,0,0.12)}
+.brand .tag{color:#eae0b4;font-size:12px}
+.nav{display:flex;gap:18px}
+.nav a{color:#ffd700;font-weight:600;padding:8px 10px;border-radius:8px;transition:all .25s}
+.nav a:hover{color:#fff;box-shadow:0 6px 18px rgba(255,215,0,0.06)}
 
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      padding: 40px;
-      animation: fadeInUp 1.5s ease;
-    }
+/* Hero */
+.hero{min-height:calc(100vh - 68px);display:flex;align-items:center;justify-content:center;text-align:center;padding:120px 20px;background:linear-gradient(180deg,rgba(0,0,0,0.55),rgba(0,0,0,0.8)), url('farm1.jpg') center/cover no-repeat;position:relative;overflow:hidden}
+.hero-inner{max-width:980px;z-index:3}
+.hero h1{font-size:38px;color:#ffd700;margin-bottom:12px;text-shadow:0 6px 30px rgba(0,0,0,0.5)}
+.hero p{color:#efe7c1;font-size:18px;margin-bottom:22px}
+.cta{display:inline-flex;gap:12px;align-items:center}
+.btn{background:linear-gradient(90deg,#ffd700,#f0b800);color:#000;padding:14px 26px;border-radius:30px;border:none;font-weight:700;cursor:pointer;box-shadow:0 10px 40px rgba(255,190,0,0.12);transition:transform .18s,box-shadow .18s}
+.btn:hover{transform:translateY(-4px);box-shadow:0 18px 60px rgba(255,180,0,0.18)}
+.small{background:transparent;border:1px solid rgba(255,215,0,0.12);padding:11px 18px;border-radius:14px;color:#ffd700}
 
-    .gallery img {
-      width: 100%;
-      border-radius: 20px;
-      border: 3px solid #ffd700;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
+/* Page container */
+.container{max-width:1100px;margin:0 auto;padding:80px 20px;position:relative;z-index:2}
 
-    .gallery img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 20px #ffd700;
-    }
+/* Cards / Products */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+.card{background:linear-gradient(180deg,#0b0b0b,#141414);border-radius:14px;overflow:hidden;border:1px solid rgba(255,215,0,0.06);box-shadow:0 8px 30px rgba(0,0,0,0.6);transition:transform .35s,box-shadow .35s}
+.card img{width:100%;height:220px;object-fit:cover;display:block}
+.card-body{padding:18px}
+.card h3{color:#ffd700;margin:0 0 8px}
+.card p{color:#e6dca4;margin:0 0 12px}
+.card .price{color:#fff;font-weight:700}
 
-    footer {
-      padding: 20px;
-      background-color: #111;
-      font-size: 14px;
-      margin-top: 30px;
-      border-top: 2px solid #ffd700;
-    }
+/* Founder */
+.founder{display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;padding:30px;background:linear-gradient(180deg,rgba(255,215,0,0.02),transparent);border-radius:14px;border:1px solid rgba(255,215,0,0.04)}
+.founder img{width:140px;height:140px;object-fit:cover;border-radius:50%;border:3px solid #ffd700;box-shadow:0 12px 30px rgba(255,200,0,0.08)}
 
-    @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
+/* Gallery */
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.gallery img{width:100%;height:160px;object-fit:cover;border-radius:12px;border:2px solid rgba(255,215,0,0.06);transition:transform .35s,box-shadow .35s}
+.gallery img:hover{transform:scale(1.03);box-shadow:0 14px 40px rgba(255,200,0,0.08)}
 
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-  </style>
-</head>
-<body>
-  <header>Kaushalya Desi Eggs – Farm Gallery</header>
+/* Contact form */
+.form-container{max-width:700px;margin:0 auto;background:linear-gradient(180deg,#0b0b0b,#0f0f0f);padding:22px;border-radius:12px;border:1px solid rgba(255,215,0,0.04)}
+.input, textarea, select{width:100%;padding:12px;border-radius:10px;border:1px solid rgba(255,215,0,0.06);background:#000;color:#fff;margin:8px 0;outline:none}
+textarea{min-height:110px;resize:vertical}
 
-  <section class="gallery">
-    <img src="farm1.jpg" alt="Farm Image 1">
-    <img src="farm2.jpg" alt="Farm Image 2">
-    <img src="farm3.jpg" alt="Farm Image 3">
-    <img src="farm4.jpg" alt="Farm Image 4">
-  </section>
+/* Footer */
+footer{background:#080808;padding:30px 20px;text-align:center;border-top:1px solid rgba(255,215,0,0.03);color:#c9b97a}
 
-  <footer>
-    © 2025 Kaushalya Desi Eggs | Designed by Vedant Khairnar
-  </footer>
-</body>
-</html>
-.fade {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 1s ease;
-}
+/* Reveal Animation (beast) */
+.reveal{opacity:0;transform:translateY(60px) scale(.98);transition:all .95s cubic-bezier(.2,.9,.2,1);will-change:transform,opacity}
+.reveal.active{opacity:1;transform:translateY(0) scale(1);filter:drop-shadow(0 18px 40px rgba(0,0,0,0.45))}
 
-.fade.show {
-  opacity: 1;
-  transform: translateY(0);
-}
+/* Particle canvas layering */
+#particles{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:0.88;mix-blend-mode:screen}
+
+/* Utility */
+.section-title{color:#ffd700;margin-bottom:18px;font-size:24px}
+.divider{height:2px;width:70px;background:linear-gradient(90deg,transparent,#ffd700,transparent);margin:12px auto 22px}
+
+/* Responsive */
+@media (max-width:900px){.hero h1{font-size:28px}.hero p{font-size:15px}.header-inner{padding:12px}.brand .logo{font-size:18px}}
