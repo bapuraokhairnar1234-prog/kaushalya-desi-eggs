@@ -1,82 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us | Kaushalya’s Desi Eggs</title>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>About | Kaushalya Desi Eggs</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      background-color: #000;
-      color: gold;
-      font-family: 'Poppins', sans-serif;
-      animation: fadeIn 2s ease-in-out;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    header {
-      text-align: center;
-      padding: 20px;
-      font-size: 2rem;
-      color: gold;
-      animation: glow 2s infinite alternate;
-    }
-
-    @keyframes glow {
-      from { text-shadow: 0 0 10px gold; }
-      to { text-shadow: 0 0 25px #ffcc00; }
-    }
-
-    .content {
-      width: 80%;
-      margin: auto;
-      padding: 30px;
-      text-align: center;
-      line-height: 1.8;
-      background: rgba(255, 215, 0, 0.1);
-      border-radius: 20px;
-      box-shadow: 0 0 20px gold;
-      margin-top: 30px;
-      animation: float 4s ease-in-out infinite;
-    }
-
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
-    }
-
-    footer {
-      margin-top: 50px;
-      text-align: center;
-      padding: 10px;
-      font-size: 1rem;
-      color: gold;
-      border-top: 1px solid gold;
-    }
-  </style>
 </head>
 <body>
-  <header>
-    About Kaushalya’s Desi Eggs
-  </header>
-
-  <div class="content">
-    <h2>Our Story</h2>
-    <p>Founded by <strong>Vedant Khairnar</strong>, Kaushalya’s Desi Eggs is a proud Indian brand producing 100% natural, semi-free-range Desi eggs. Our hens roam freely, eat organic feed, and are cared for with love and respect.</p>
-
-    <h2>Our Mission</h2>
-    <p>We aim to bring India’s most authentic and nutritious Desi eggs directly to your home — fresh, pure, and filled with natural goodness.</p>
-
-    <h2>Our Vision</h2>
-    <p>To make healthy Desi eggs accessible across every household while empowering local farmers and promoting sustainable poultry practices.</p>
+<header>
+  <div class="header-inner">
+    <div class="brand"><div class="logo">Kaushalya Desi Eggs</div><div class="tag">Pure. Desi. Organic.</div></div>
+    <nav class="nav">
+      <a href="index.html">Home</a><a href="products.html">Products</a><a href="about.html">About</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a>
+    </nav>
   </div>
+</header>
 
-  <footer>
-    © 2025 Kaushalya’s Desi Eggs | Crafted with 💛 by Vedant
-  </footer>
+<main>
+  <section class="container reveal">
+    <h2 class="section-title">About Kaushalya Desi Eggs</h2>
+    <div class="divider"></div>
+    <p style="max-width:820px;margin:14px auto;color:#efe7c1">Kaushalya Desi Eggs is built on traditional farming knowledge. We raise Gavran hens with natural feed and free range practices to ensure the healthiest eggs and meat for your family. Founded by local farmer <strong>Bapurao Khairnar</strong>, our mission is to deliver premium, honest produce.</p>
+  </section>
+
+  <section class="container reveal">
+    <div class="founder">
+      <img src="bapurao.jpg" alt="Founder">
+      <h3>Bapurao Khairnar</h3>
+      <p style="max-width:700px;color:#e8dba0">A farmer with decades of experience who believes in the power of traditional rearing, quality feed and respectful animal care.</p>
+    </div>
+  </section>
+</main>
+
+<footer><p>© 2025 Kaushalya Desi Eggs</p></footer>
+<script src="script.js"></script>
 </body>
 </html>
