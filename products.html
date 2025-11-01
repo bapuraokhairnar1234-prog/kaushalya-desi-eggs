@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Products | Kaushalya Desi Eggs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <div class="brand"><div class="logo">Kaushalya Desi Eggs</div><div class="tag">Pure. Desi. Organic.</div></div>
+    <nav class="nav">
+      <a href="index.html">Home</a><a href="products.html">Products</a><a href="about.html">About</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="container reveal">
+    <h2 class="section-title">Our Products</h2>
+    <div class="divider"></div>
+    <div class="grid">
+      <div class="card reveal">
+        <img src="egg1.jpg" alt="Gavran Eggs 30 Pack">
+        <div class="card-body">
+          <h3>Gavran Eggs (30 Pack)</h3>
+          <p class="price">₹300 (₹10 each)</p>
+          <p>Natural desi eggs – pack of 30, fresh daily.</p>
+          <div style="margin-top:12px">
+            <input id="q1" type="number" placeholder="Quantity (eggs)" class="input" style="width:120px;display:inline-block">
+            <button class="btn" onclick="openWhatsAppOrder('Gavran Eggs (30 Pack)', document.getElementById('q1').value)">Order Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card reveal">
+        <img src="hen1.jpg" alt="Farm Combo">
+        <div class="card-body">
+          <h3>Farm Combo (60 Eggs)</h3>
+          <p class="price">₹600</p>
+          <p>60 eggs combo — best for families.</p>
+          <div style="margin-top:12px">
+            <input id="q2" type="number" placeholder="Quantity (eggs)" class="input" style="width:120px;display:inline-block">
+            <button class="btn" onclick="openWhatsAppOrder('Farm Combo (60 Eggs)', document.getElementById('q2').value)">Order Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card reveal">
+        <img src="premium.jpg" alt="Premium Gavran Eggs">
+        <div class="card-body">
+          <h3>Premium Gavran Eggs (15 Pack)</h3>
+          <p class="price">₹150</p>
+          <p>Smaller pack with premium eggs.</p>
+          <div style="margin-top:12px">
+            <input id="q3" type="number" placeholder="Quantity (eggs)" class="input" style="width:120px;display:inline-block">
+            <button class="btn" onclick="openWhatsAppOrder('Premium Gavran Eggs (15 Pack)', document.getElementById('q3').value)">Order Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card reveal">
+        <img src="premium.jpg" alt="Meat">
+        <div class="card-body">
+          <h3>Gavran Chicken Meat</h3>
+          <p class="price">₹400 / kg</p>
+          <p>Freshly cut — order by kg.</p>
+          <div style="margin-top:12px">
+            <input id="q4" type="number" placeholder="Quantity (kg)" class="input" style="width:120px;display:inline-block">
+            <button class="btn" onclick="openWhatsAppOrder('Gavran Chicken Meat', document.getElementById('q4').value)">Order Now</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer><p>© 2025 Kaushalya Desi Eggs</p></footer>
+<script src="script.js"></script>
+</body>
+</html>
