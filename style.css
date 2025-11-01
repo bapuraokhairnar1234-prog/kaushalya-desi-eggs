@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaushalya Desi Eggs</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #fff8e1;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #ffcc00;
+      color: #222;
+      padding: 20px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    section {
+      padding: 30px;
+    }
+    button {
+      background-color: #ffcc00;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #ffdb4d;
+    }
+  </style>
+</head>
+<body>
+  <header>Kaushalya Desi Eggs</header>
+  <section>
+    <h2>Fresh Organic Eggs from Our Farm</h2>
+    <p>100% Gavran and Healthy Desi Eggs — directly from the farm to your home.</p>
+    <button onclick="window.location.href='https://wa.me/918767405835?text=Hello!%20I%20want%20to%20order%20Desi%20Eggs'">
+      Order on WhatsApp
+    </button>
+  </section>
+</body>
+</html>sty
