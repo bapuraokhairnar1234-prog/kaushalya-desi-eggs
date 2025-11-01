@@ -1,82 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us | Kaushalya’s Desi Eggs</title>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Contact | Kaushalya Desi Eggs</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      background-color: #000;
-      color: gold;
-      font-family: 'Poppins', sans-serif;
-      animation: fadeIn 2s ease-in-out;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    header {
-      text-align: center;
-      padding: 20px;
-      font-size: 2rem;
-      color: gold;
-      animation: glow 2s infinite alternate;
-    }
-
-    @keyframes glow {
-      from { text-shadow: 0 0 10px gold; }
-      to { text-shadow: 0 0 25px #ffcc00; }
-    }
-
-    .content {
-      width: 80%;
-      margin: auto;
-      padding: 30px;
-      text-align: center;
-      line-height: 1.8;
-      background: rgba(255, 215, 0, 0.1);
-      border-radius: 20px;
-      box-shadow: 0 0 20px gold;
-      margin-top: 30px;
-      animation: float 4s ease-in-out infinite;
-    }
-
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
-    }
-
-    footer {
-      margin-top: 50px;
-      text-align: center;
-      padding: 10px;
-      font-size: 1rem;
-      color: gold;
-      border-top: 1px solid gold;
-    }
-  </style>
 </head>
 <body>
-  <header>
-    About Kaushalya’s Desi Eggs
-  </header>
-
-  <div class="content">
-    <h2>Our Story</h2>
-    <p>Founded by <strong>Vedant Khairnar</strong>, Kaushalya’s Desi Eggs is a proud Indian brand producing 100% natural, semi-free-range Desi eggs. Our hens roam freely, eat organic feed, and are cared for with love and respect.</p>
-
-    <h2>Our Mission</h2>
-    <p>We aim to bring India’s most authentic and nutritious Desi eggs directly to your home — fresh, pure, and filled with natural goodness.</p>
-
-    <h2>Our Vision</h2>
-    <p>To make healthy Desi eggs accessible across every household while empowering local farmers and promoting sustainable poultry practices.</p>
+<header>
+  <div class="header-inner">
+    <div class="brand"><div class="logo">Kaushalya Desi Eggs</div><div class="tag">Pure. Desi. Organic.</div></div>
+    <nav class="nav">
+      <a href="index.html">Home</a><a href="products.html">Products</a><a href="about.html">About</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a>
+    </nav>
   </div>
+</header>
 
-  <footer>
-    © 2025 Kaushalya’s Desi Eggs | Crafted with 💛 by Vedant
-  </footer>
+<main>
+  <section class="container reveal">
+    <h2 class="section-title">Contact & Order</h2>
+    <div class="divider"></div>
+    <div class="form-container reveal">
+      <form id="orderForm">
+        <input id="name" class="input" placeholder="Your name" required>
+        <input id="quantity" class="input" type="number" placeholder="Quantity (eggs/kg)" required>
+        <select id="product" class="input">
+          <option>Eggs</option>
+          <option>Gavran Chicken Meat</option>
+        </select>
+        <textarea id="message" placeholder="Message / delivery area (optional)"></textarea>
+        <button class="btn" type="button" onclick="submitContactForm()">Order Now on WhatsApp</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer><p>© 2025 Kaushalya Desi Eggs</p></footer>
+
+<script src="script.js"></script>
+<script>
+  function submitContactForm(){
+    const name = document.getElementById('name').value || 'Customer';
+    const qty = document.getElementById('quantity').value || '';
+    const product = document.getElementById('product').value || '';
+    const note = document.getElementById('message').value || '';
+    if(!qty){ alert('Please add quantity'); return; }
+    openWhatsAppOrder(product, qty, `Name: ${name}. ${note}`);
+  }
+</script>
 </body>
 </html>
