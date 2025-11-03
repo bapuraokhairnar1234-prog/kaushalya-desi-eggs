@@ -13,18 +13,18 @@
   <link rel="canonical" href="https://bapuraokhairnar1234-prog.github.io/kaushalya-desi-eggs/">
 
   <!-- 🧩 Stylesheet -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
 
   <!-- 🖼️ Social Preview -->
   <meta property="og:title" content="Kaushalya Desi Eggs — Pure. Desi. Organic.">
   <meta property="og:description" content="Order pure desi, organic, semi-free-range eggs directly from our Nashik farm. Healthy, fresh, and chemical-free.">
-  <meta property="og:image" content="https://bapuraokhairnar1234-prog.github.io/kaushalya-desi-eggs/egg-cover.jpg">
+  <meta property="og:image" content="https://bapuraokhairnar1234-prog.github.io/kaushalya-desi-eggs/egg-cover.webp">
   <meta property="og:url" content="https://bapuraokhairnar1234-prog.github.io/kaushalya-desi-eggs/">
   <meta property="og:type" content="website">
-  <link rel="icon" href="egg-icon.png" type="image/png">
+  <link rel="icon" href="egg-icon.webp" type="image/webp">
 
-  <!-- ⚡ Preload video for faster access -->
-  <link rel="preload" as="video" href="intro.mp4" type="video/mp4">
+  <!-- ⚡ Performance -->
+  <meta http-equiv="Cache-Control" content="max-age=31536000, must-revalidate">
 </head>
 
 <body>
@@ -35,9 +35,9 @@
     muted
     loop
     playsinline
-    preload="none"
+    preload="metadata"
     poster="poster.webp"
-    style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+    style="position:fixed;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:-1;">
     <source src="intro.mp4" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
@@ -79,21 +79,21 @@
       <div class="divider"></div>
       <div class="grid">
         <div class="card reveal">
-          <img src="egg2.jpg" alt="Desi Eggs" loading="lazy" width="400" height="300">
+          <img src="egg2.webp" alt="Desi Eggs" loading="lazy" width="400" height="300">
           <div class="card-body">
             <h3>100% Natural</h3>
             <p>Free-range hens fed with organic feed.</p>
           </div>
         </div>
         <div class="card reveal">
-          <img src="hen2.jpg" alt="Free Range" loading="lazy" width="400" height="300">
+          <img src="hen2.webp" alt="Free Range" loading="lazy" width="400" height="300">
           <div class="card-body">
             <h3>Farm to Home</h3>
             <p>Daily fresh pickup — minimal handling.</p>
           </div>
         </div>
         <div class="card reveal">
-          <img src="premium.jpg" alt="Premium" loading="lazy" width="400" height="300">
+          <img src="premium.webp" alt="Premium" loading="lazy" width="400" height="300">
           <div class="card-body">
             <h3>Premium Quality</h3>
             <p>Strict hygiene and natural rearing methods.</p>
@@ -107,7 +107,7 @@
       <div class="section-title">Founder</div>
       <div class="divider"></div>
       <div class="founder reveal">
-        <img src="bapurao.jpg" alt="Bapurao Khairnar" loading="lazy" width="300" height="300">
+        <img src="bapurao.webp" alt="Founder" loading="lazy" width="300" height="300">
         <h3>Bapurao Khairnar</h3>
         <p>Raised with farming knowledge and a passion for pure Desi breeds.</p>
       </div>
@@ -121,6 +121,6 @@
   </footer>
 
   <!-- 📜 Script -->
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
