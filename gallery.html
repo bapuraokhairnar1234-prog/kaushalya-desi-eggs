@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Farm Gallery | Kaushalya Desi Eggs</title>
 
   <!-- 🧠 SEO -->
-  <meta name="description" content="Explore the Kaushalya Desi Eggs gallery — see our organic poultry farm, free-range hens, and fresh desi egg collection from Nashik.">
+  <meta name="description" content="Explore Kaushalya Desi Eggs gallery — see our organic poultry farm, free-range hens, and fresh desi egg collection from Nashik.">
   <meta name="keywords" content="Kaushalya Desi Eggs Gallery, Organic Farm, Desi Hens, Farm Photos, Nashik Poultry">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://bapuraokhairnar1234-prog.github.io/kaushalya-desi-eggs/gallery.html">
 
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="egg-icon.png" type="image/png">
+  <!-- 🎨 Stylesheet (non-blocking load) -->
+  <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
 
-  <!-- ⚡ Preload hero image (optional) -->
-  <link rel="preload" as="image" href="farm1.jpg">
+  <!-- 🖼️ Icon -->
+  <link rel="icon" href="egg-icon.webp" type="image/webp">
+
+  <!-- ⚡ Performance -->
+  <meta http-equiv="Cache-Control" content="max-age=31536000, must-revalidate">
 </head>
 
 <body>
@@ -42,12 +45,30 @@
       <h2 class="section-title">Farm Gallery</h2>
       <div class="divider"></div>
       <div class="gallery reveal">
-        <img src="farm1.jpg" alt="Farm 1 - Desi Poultry Shed" loading="lazy" width="400" height="300">
-        <img src="farm2.jpg" alt="Farm 2 - Free Range Area" loading="lazy" width="400" height="300">
-        <img src="farm3.jpg" alt="Farm 3 - Organic Environment" loading="lazy" width="400" height="300">
-        <img src="hen2.jpg" alt="Hens - Free Range Desi Breeds" loading="lazy" width="400" height="300">
-        <img src="premium.jpg" alt="Premium Desi Eggs" loading="lazy" width="400" height="300">
-        <img src="egg2.jpg" alt="Organic Desi Eggs Basket" loading="lazy" width="400" height="300">
+        <picture>
+          <source srcset="farm1.webp" type="image/webp">
+          <img src="farm1.jpg" alt="Farm 1 - Desi Poultry Shed" loading="lazy" width="400" height="300">
+        </picture>
+        <picture>
+          <source srcset="farm2.webp" type="image/webp">
+          <img src="farm2.jpg" alt="Farm 2 - Free Range Area" loading="lazy" width="400" height="300">
+        </picture>
+        <picture>
+          <source srcset="farm3.webp" type="image/webp">
+          <img src="farm3.jpg" alt="Farm 3 - Organic Environment" loading="lazy" width="400" height="300">
+        </picture>
+        <picture>
+          <source srcset="hen2.webp" type="image/webp">
+          <img src="hen2.jpg" alt="Hens - Free Range Desi Breeds" loading="lazy" width="400" height="300">
+        </picture>
+        <picture>
+          <source srcset="premium.webp" type="image/webp">
+          <img src="premium.jpg" alt="Premium Desi Eggs" loading="lazy" width="400" height="300">
+        </picture>
+        <picture>
+          <source srcset="egg2.webp" type="image/webp">
+          <img src="egg2.jpg" alt="Organic Desi Eggs Basket" loading="lazy" width="400" height="300">
+        </picture>
       </div>
     </section>
   </main>
@@ -57,6 +78,7 @@
     <p>© 2025 Kaushalya Desi Eggs — Kaushalya Desi Farm</p>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- 📜 Script -->
+  <script src="script.js" defer></script>
 </body>
 </html>
