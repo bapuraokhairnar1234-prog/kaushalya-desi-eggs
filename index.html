@@ -23,6 +23,15 @@ style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; object-fit: 
   <source src="./intro.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+  <video id="heroVideo" autoplay muted loop playsinline poster="poster.webp"></video>
+
+<script>
+window.addEventListener("load", () => {
+  const video = document.getElementById("heroVideo");
+  video.src = "video.mp4"; // load after page is ready
+  video.play();
+});
+</script>
 <header>
   <meta name="description" content="Kaushalya Desi Eggs — Pure, organic, semi-free range eggs from our farm in Nashik.">
   <div class="header-inner">
