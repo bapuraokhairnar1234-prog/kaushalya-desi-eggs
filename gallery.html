@@ -1,47 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Gallery | Kaushalya Desi Eggs</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Kaushalya Desi Eggs — Pure. Desi. Organic.</title>
+
+  <meta name="description" content="Kaushalya Desi Eggs — Pure, Organic, Semi-free range eggs from our farm in Nashik. Fresh, healthy, and full of nutrition. Order now for farm-fresh desi eggs.">
+  <meta name="keywords" content="Kaushalya Desi Eggs, Organic Eggs, Desi Eggs Nashik, Farm Fresh Eggs, Healthy Protein Eggs, Natural Poultry Farm">
+  <meta name="author" content="Kaushalya Desi Farm">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://bapuraokhairnar1234-prog.github.io/kaushalya-desi-eggs/">
+
   <link rel="stylesheet" href="style.css">
+  <meta property="og:title" content="Kaushalya Desi Eggs — Pure. Desi. Organic.">
+  <meta property="og:description" content="Order pure desi, organic, semi-free-range eggs directly from our Nashik farm. Healthy, fresh, and chemical-free.">
+  <meta property="og:image" content="https://bapuraokhairnar1234-prog.github.io/kaushalya-desi-eggs/egg-cover.jpg">
+  <meta property="og:url" content="https://bapuraokhairnar1234-prog.github.io/kaushalya-desi-eggs/">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="egg-icon.png" type="image/png">
 </head>
+
 <body>
-<header>
-  <div class="header-inner">
-    <div class="brand">
-      <div class="logo">Kaushalya Desi Eggs</div>
-      <div class="tag">Pure. Desi. Organic.</div>
+  <video autoplay muted loop playsinline id="intro-video"
+    style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+    <source src="./intro.mp5" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <video id="heroVideo" autoplay muted loop playsinline poster="poster.webp"></video>
+
+  <script>
+    window.addEventListener("load", () => {
+      const video = document.getElementById("heroVideo");
+      video.src = "video.mp4"; // load after page is ready
+      video.play();
+    });
+  </script>
+
+  <header>
+    <meta name="description" content="Kaushalya Desi Eggs — Pure, organic, semi-free range eggs from our farm in Nashik.">
+    <div class="header-inner">
+      <div class="brand">
+        <div class="logo">Kaushalya Desi Eggs</div>
+        <div class="tag">Pure. Desi. Organic.</div>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="products.html">Products</a>
-      <a href="about.html">About</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
-</header>
+  </header>
 
-<main>
-  <section class="container reveal">
-    <h2 class="section-title">Farm Gallery</h2>
-    <div class="divider"></div>
-    <div class="gallery reveal">
-      <img src="farm1.jpg" alt="Farm 1">
-      <img src="farm2.jpg" alt="Farm 2">
-      <img src="farm3.jpg" alt="Farm 3">
-      <img src="hen2.jpg" alt="Hens">
-      <img src="premium.jpg" alt="Product">
-      <img src="egg2.jpg" alt="Eggs">
-    </div>
-  </section>
-</main>
+  <main>
+    <section id="home" class="hero reveal">
+      <div class="hero-inner">
+        <h1>Royal Gavran Eggs — Fresh from our fields</h1>
+        <p>Farm-fresh desi eggs and premium Gavran meat — straight to your table.</p>
+        <div class="cta">
+          <button class="btn" onclick="openWhatsAppOrder('Desi Eggs', 30)">Order 30 Eggs</button>
+          <button class="small" onclick="location.href='products.html'">View Products</button>
+        </div>
+      </div>
+    </section>
 
-<footer>
-  <p>© 2025 Kaushalya Desi Eggs</p>
-</footer>
+    <section class="container reveal" id="why">
+      <div class="section-title">Why Choose Kaushalya Desi Eggs?</div>
+      <div class="divider"></div>
+      <div class="grid">
+        <div class="card reveal">
+          <img src="egg2.jpg" alt="Desi Eggs">
+          <div class="card-body">
+            <h3>100% Natural</h3>
+            <p>Free-range hens fed with organic feed.</p>
+          </div>
+        </div>
+        <div class="card reveal">
+          <img src="hen2.jpg" alt="Free Range">
+          <div class="card-body">
+            <h3>Farm to Home</h3>
+            <p>Daily fresh pickup — minimal handling.</p>
+          </div>
+        </div>
+        <div class="card reveal">
+          <img src="premium.jpg" alt="Premium">
+          <div class="card-body">
+            <h3>Premium Quality</h3>
+            <p>Strict hygiene and natural rearing methods.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<script src="script.js"></script>
+    <section class="container reveal" id="founder">
+      <div class="section-title">Founder</div>
+      <div class="divider"></div>
+      <div class="founder reveal">
+        <img src="bapurao.jpg" alt="Bapurao">
+        <h3>Bapurao Khairnar</h3>
+        <p>Raised with farming knowledge and a passion for pure Desi breeds.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Kaushalya Desi Eggs — Kaushalya Desi Farm</p>
+    <p style="font-size:12px;margin-top:8px;color:#c9b97a">Order: ₹10 / egg • Meat: ₹400 / kg</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
