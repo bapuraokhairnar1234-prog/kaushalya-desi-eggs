@@ -5,80 +5,102 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Farm Gallery | Kaushalya Desi Eggs</title>
 
-  <!-- 🧠 SEO -->
+  <!-- SEO -->
   <meta name="description" content="Explore Kaushalya Desi Eggs gallery — see our organic poultry farm, free-range hens, and fresh desi egg collection from Nashik.">
   <meta name="keywords" content="Kaushalya Desi Eggs Gallery, Organic Farm, Desi Hens, Farm Photos, Nashik Poultry">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://bapuraokhairnar1234-prog.github.io/kaushalya-desi-eggs/gallery.html">
 
-  <!-- 🎨 Stylesheet (non-blocking load) -->
-  <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
-
-  <!-- 🖼️ Icon -->
+  <!-- Favicon -->
   <link rel="icon" href="egg-icon.webp" type="image/webp">
 
-  <!-- ⚡ Performance -->
+  <!-- Preload the smallest/most-important image so the page looks ready quickly -->
+  <link rel="preload" as="image" href="farm1.webp" type="image/webp">
+
+  <!-- Stylesheet (normal, safe loading) -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Optional: caching hint (real caching should be set on server/GitHub Pages via headers) -->
   <meta http-equiv="Cache-Control" content="max-age=31536000, must-revalidate">
 </head>
 
 <body>
-  <!-- 🧭 Header -->
+  <!-- Header -->
   <header>
     <div class="header-inner">
       <div class="brand">
         <div class="logo">Kaushalya Desi Eggs</div>
         <div class="tag">Pure. Desi. Organic.</div>
       </div>
-      <nav class="nav">
+      <nav class="nav" aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a href="products.html">Products</a>
         <a href="about.html">About</a>
-        <a href="gallery.html" class="active">Gallery</a>
+        <a href="gallery.html" class="active" aria-current="page">Gallery</a>
         <a href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
-  <!-- 🌾 Main Gallery -->
+  <!-- Main Gallery -->
   <main>
-    <section class="container reveal">
-      <h2 class="section-title">Farm Gallery</h2>
-      <div class="divider"></div>
-      <div class="gallery reveal">
-        <picture>
-          <source srcset="farm1.webp" type="image/webp">
-          <img src="farm1.jpg" alt="Farm 1 - Desi Poultry Shed" loading="lazy" width="400" height="300">
-        </picture>
-        <picture>
-          <source srcset="farm2.webp" type="image/webp">
-          <img src="farm2.jpg" alt="Farm 2 - Free Range Area" loading="lazy" width="400" height="300">
-        </picture>
-        <picture>
-          <source srcset="farm3.webp" type="image/webp">
-          <img src="farm3.jpg" alt="Farm 3 - Organic Environment" loading="lazy" width="400" height="300">
-        </picture>
-        <picture>
-          <source srcset="hen2.webp" type="image/webp">
-          <img src="hen2.jpg" alt="Hens - Free Range Desi Breeds" loading="lazy" width="400" height="300">
-        </picture>
-        <picture>
-          <source srcset="premium.webp" type="image/webp">
-          <img src="premium.jpg" alt="Premium Desi Eggs" loading="lazy" width="400" height="300">
-        </picture>
-        <picture>
-          <source srcset="egg2.webp" type="image/webp">
-          <img src="egg2.jpg" alt="Organic Desi Eggs Basket" loading="lazy" width="400" height="300">
-        </picture>
+    <section class="container reveal" aria-labelledby="gallery-title">
+      <h2 id="gallery-title" class="section-title">Farm Gallery</h2>
+      <div class="divider" role="separator"></div>
+
+      <div class="gallery reveal" role="list">
+        <!-- Each picture: WebP source then fallback jpg. Images lazy-load and include width/height -->
+        <div role="listitem">
+          <picture>
+            <source srcset="farm1.webp" type="image/webp">
+            <img src="farm1.jpg" alt="Farm 1 - Desi Poultry Shed" loading="lazy" decoding="async" width="400" height="300">
+          </picture>
+        </div>
+
+        <div role="listitem">
+          <picture>
+            <source srcset="farm2.webp" type="image/webp">
+            <img src="farm2.jpg" alt="Farm 2 - Free Range Area" loading="lazy" decoding="async" width="400" height="300">
+          </picture>
+        </div>
+
+        <div role="listitem">
+          <picture>
+            <source srcset="farm3.webp" type="image/webp">
+            <img src="farm3.jpg" alt="Farm 3 - Organic Environment" loading="lazy" decoding="async" width="400" height="300">
+          </picture>
+        </div>
+
+        <div role="listitem">
+          <picture>
+            <source srcset="hen2.webp" type="image/webp">
+            <img src="hen2.jpg" alt="Hens - Free Range Desi Breeds" loading="lazy" decoding="async" width="400" height="300">
+          </picture>
+        </div>
+
+        <div role="listitem">
+          <picture>
+            <source srcset="premium.webp" type="image/webp">
+            <img src="premium.jpg" alt="Premium Desi Eggs" loading="lazy" decoding="async" width="400" height="300">
+          </picture>
+        </div>
+
+        <div role="listitem">
+          <picture>
+            <source srcset="egg2.webp" type="image/webp">
+            <img src="egg2.jpg" alt="Organic Desi Eggs Basket" loading="lazy" decoding="async" width="400" height="300">
+          </picture>
+        </div>
       </div>
     </section>
   </main>
 
-  <!-- ⚙️ Footer -->
+  <!-- Footer -->
   <footer>
     <p>© 2025 Kaushalya Desi Eggs — Kaushalya Desi Farm</p>
   </footer>
 
-  <!-- 📜 Script -->
+  <!-- Defer JS so it doesn't block initial render -->
   <script src="script.js" defer></script>
 </body>
 </html>
